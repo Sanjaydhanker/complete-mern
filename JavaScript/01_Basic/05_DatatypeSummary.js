@@ -9,14 +9,14 @@ let userId = undefined; //undefined
 let passWord = Symbol(123); //symbol
 let temp = null; //obj
 
-console.table([name, age, isUserLoggedIn, userId, passWord, temp]);
+// console.table([name, age, isUserLoggedIn, userId, passWord, temp]);
 
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof isUserLoggedIn);
-console.log(typeof userId);
-console.log(typeof passWord);
-console.log(typeof temp);
+// console.log(typeof name);
+// console.log(typeof age);
+// console.log(typeof isUserLoggedIn);
+// console.log(typeof userId);
+// console.log(typeof passWord);
+// console.log(typeof temp);
 
 // ************* NonPrimitive DataType(Reference)***********
 
@@ -33,6 +33,34 @@ const myFunction = () => {
 
 const hero = ["Shaktiman", "Superman", "Ironman"];
 
-console.log(typeof user);
-console.log(typeof myFunction);
-console.log(typeof hero);
+// console.log(typeof user);
+// console.log(typeof myFunction);
+// console.log(typeof hero);
+
+// ++++++++++++++++++++++++Memory +++++++++++++++++++++
+
+//primitive (stack memory)
+
+let YoutubeName = "Chai or Code";
+
+let newChannel = YoutubeName;
+
+newChannel = "chai or js";
+
+console.log(YoutubeName);
+console.log(newChannel);
+
+//Reference type  (heap memory)
+
+let myObj = {
+  userName: "Sanjay",
+  age: 21,
+};
+
+let newObj = myObj;
+
+newObj.userName = "dev";
+newObj.age = 20;
+
+console.log(myObj.userName);
+console.log(newObj.userName);
