@@ -3,36 +3,124 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 nav {
+  width: 100%;
+  padding: 5px 20px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
-  background-color: #9500ff;
-  color: white;
+  background: rgb(98, 255, 98);
 }
-
+.logo h2 {
+  color: rgb(135, 7, 255);
+  font-weight: 600;
+  font-family: cursive;
+}
 .menu ul {
-  display: flex;
+  display: inline-flex;
+  gap: 10px;
   list-style: none;
-  gap: 20px;
 }
-
-.menu a {
+.menu ul li a {
   text-decoration: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: rgb(63, 113, 63);
+  font-weight: 500;
+  font-family: cursive;
+}
+.menu ul li a:hover {
+  background: rgb(47, 165, 47);
   color: white;
 }
-.menu a:hover {
-  color: orange;
+.search {
+  display: inline-flex;
+  border: 1px solid rgb(157, 51, 255);
+  border-radius: 5px;
+  overflow: hidden;
 }
-
-.search input {
-  padding: 5px;
+.search input,
+.search button {
+  padding: 7px 15px;
   border: none;
 }
-
 .search button {
-  padding: 5px 10px;
+  background: rgb(164, 67, 255);
+  color: white;
+}
+.cardmain {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  border: 2px solid rgb(71, 62, 62);
+  padding: 20px;
+  border-radius: 10px;
+}
+.cardmain .imgsection {
+  width: 50%;
+  padding: 10px;
+}
+.cardmain .textsection {
+  width: 50%;
+  padding: 10px;
+}
+.textsection h1 {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.textsection p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.textsection button {
+  padding: 10px 20px;
+  background-color: rgb(34, 34, 240);
+  border: none;
+  color: white;
+  border-radius: 4px;
   cursor: pointer;
+  float: right;
+}
+.textsection button:hover {
+  background: rgb(50, 50, 228);
+}
+.card {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.marquee {
+  display: flex;
+  justify-content: center;
+}
+marquee {
+  width: 80%;
+  background-color: aqua;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 0;
+  border: 20px solid aqua;
+}
+.footermain {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.footermain section {
+  padding: 20px;
+}
+.footermain h1 {
+  color: rgb(41, 244, 41);
+}
+.footermain hr {
+  border: 2px solid rgb(41, 244, 41);
+}
+.footermain ul {
+  list-style-type: none;
+}
+.footermain ul li a {
+  text-decoration: none;
+  color: white;
 }
