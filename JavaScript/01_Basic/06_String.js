@@ -32,6 +32,11 @@ const url = "https://sanjay.com%20dhanker";
 
 console.log(url.replace("%20", "-"));
 
-console.log(url.includes("sanjay"));
+// console.log(url.includes("sanjay"));
 
-console.log(myName.split("-"));
+// console.log(myName.split("-"));
+
+const youTubeName = new String("CodeWithUs");
+console.log(youTubeName.charAt(2));
+console.log(youTubeName.includes("d"));
+console.log(youTubeName.indexOf("d"));

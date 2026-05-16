@@ -40,7 +40,7 @@ if (true) {
 }
 // console.log(username);      //because of blocks
 
-console.log(addOne(3));
+// console.log(addOne(3));
 
 function addOne(num) {
   return num + 1;
@@ -50,3 +50,25 @@ function addOne(num) {
 const addTwo = function (num1) {
   return num1 + 2;
 };
+
+let x = 10;
+const y = 20;
+var z = 30;
+
+console.log(x);
+console.log(y);
+console.log(z);
+
+if (true) {
+  let x = 100;
+  const y = 200;
+  var z = 300;
+
+  console.log("inner", x);
+  console.log("inner", y);
+  console.log("inner", z);
+}
+
+console.log("outer", x);
+console.log("outer", y);
+console.log("outer", z);

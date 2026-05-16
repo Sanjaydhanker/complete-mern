@@ -47,4 +47,11 @@ function secondValue(value) {
   return value[1];
 }
 
-console.log(secondValue(myArr));
+// console.log(secondValue(myArr));
+
+function addNumber(number1, number2) {
+  return number1 + number2;
+}
+const showResult = addNumber(1, 3);
+
+console.log(showResult);

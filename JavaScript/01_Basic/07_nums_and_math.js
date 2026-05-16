@@ -15,4 +15,11 @@ const myNum = new Number(879102);
 // console.log(Math.ceil(3.1)); //max value
 
 let otp = Math.random() * 1000000;
-console.log(Math.floor(otp));
+// console.log(Math.floor(otp));
+
+const min = 1000;
+const max = 2000;
+
+const otpNum = Math.floor(Math.random() * (max - min + 1) + min);
+
+console.log(otpNum);
