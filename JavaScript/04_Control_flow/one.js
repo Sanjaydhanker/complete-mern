@@ -24,7 +24,7 @@ const userLoggedIn = true;
 const debitCard = true;
 
 if (userLoggedIn && debitCard) {
-  console.log("Allow to buy");
+  // console.log("Allow to buy");
   //check all condition
 }
 
@@ -32,6 +32,18 @@ const googleLoggedIn = false;
 const emailLoggedIn = true;
 
 if (googleLoggedIn || emailLoggedIn) {
-  console.log("allow Entry");
+  // console.log("allow Entry");
   // check one condition
+}
+
+let x = 10;
+let y = 20;
+let z = 30;
+
+if (x > y && x > z) {
+  console.log("X is greater than y or z");
+} else if (y > x && y > z) {
+  console.log("y is greater than x or z");
+} else {
+  console.log("Z is greater than x or y");
 }
