@@ -31,7 +31,7 @@ const arr = () => {
   console.log(this.username);
 };
 
-// arr()          //this not work in arrow function
+// arr(); //this not work in arrow function
 
 // const addTwoNumber=(num1 , num2)=>{
 //       return num1 + num2
