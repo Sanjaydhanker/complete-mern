@@ -29,16 +29,20 @@ const myHero = ["Shaktiman", "Thor", "Flash"];
 
 for (let index = 0; index < myHero.length; index++) {
   const element = myHero[index];
-  // console.log(element);
+  console.log(element);
 }
 
 //break and continue
 
 for (let i = 1; i <= 20; i++) {
   if (i == 5) {
-    console.log("5 is a best number");
+    // console.log("5 is a best number");
     // break;
     continue; //print every number skip 5
   }
-  console.log(`number start ${i}`);
+  // console.log(`number start ${i}`);
+}
+
+for (let i = 1; i <= 10; i++) {
+  // console.log(i);
 }
