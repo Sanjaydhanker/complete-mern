@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      img {
+        width: 200px;
+      }
+      ul {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body style="background-color: black; color: white">
+    <h1>Amezing Images</h1>
+    <ul id="images">
+      <li>
+        <img
+          id="town"
+          src="https://images.pexels.com/photos/37375886/pexels-photo-37375886.jpeg"
+          alt="town"
+        />
+      </li>
+      <li>
+        <img
+          id="tower"
+          src="https://images.pexels.com/photos/36511076/pexels-photo-36511076.jpeg"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          id="fruits"
+          src="https://images.pexels.com/photos/29890825/pexels-photo-29890825.jpeg"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          id="flowers"
+          src="https://images.pexels.com/photos/30133634/pexels-photo-30133634.jpeg"
+          alt=""
+        />
+      </li>
+      <li><a href="https://www.google.com/" id="google">Google</a></li>
+    </ul>
+  </body>
+  <script>
+    // document.getElementById("flowers").onclick = function () {
+    //   alert("flower clicked");
+    // };       not for best practice
+
+    // addEventListener
+
+    //for e
+    //type, target, timestamp, preventDefault, toElement, srcElement
+    //currentTarget, clientX, clientY, screenY
+    //altkey , ctrlkey, shiftkey, keyCode
+
+    // document.getElementById("images").addEventListener("click", function (e) {
+    //   console.log("ul clicked");
+    // });
+
+    // document.getElementById("flowers").addEventListener("click", function (e) {
+    //   console.log("flower clicked again");
+    //   e.stopPropagation();
+    // });
+
+    // document.getElementById("google").addEventListener("click", function (e) {
+    //   console.log("google clicked");
+    //   e.preventDefault();
+    //   e.stopPropagation();
+    // });
+
+    //remove image by click
+
+    document.querySelector("#images").addEventListener("click", function (e) {
+      //   console.log(e.target.tagName);
+      if (e.target.tagName === "IMG") {
+        let removeImage = e.target.parentNode;
+        removeImage.remove();
+      }
+    });
+  </script>
+</html>
