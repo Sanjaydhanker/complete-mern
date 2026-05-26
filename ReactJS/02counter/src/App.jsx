@@ -8,7 +8,11 @@ function App() {
       alert("Value is too high");
       setCountVal(countVal);
     } else {
-      setCountVal(countVal + 1);
+      setCountVal((prevCount) => prevCount + 1);
+      setCountVal((prevCount) => prevCount + 1);
+      setCountVal((prevCount) => prevCount + 1);
+      // setCountVal(countVal + 1);
+      // setCountVal(countVal + 1);
     }
   };
 
