@@ -112,4 +112,11 @@ const userProduct = products.filter(
   (pr) => pr.rating > 4 && pr.category == "Mobile",
 );
 
-console.log(userProduct);
+// console.log(userProduct);
+
+const myArr = [1, 1, 2, 3, 4, 5, 5];
+
+const newArr = myArr.filter((num) => {
+  return num > 4;
+});
+console.log(newArr);
