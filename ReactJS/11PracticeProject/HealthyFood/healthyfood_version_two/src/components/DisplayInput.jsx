@@ -1,0 +1,24 @@
+import React from "react";
+import { useState } from "react";
+
+function DisplayInput({ handleAddButton, inputVal, handleOnChange }) {
+  return (
+    <div className="flex items-center justify-between border rounded my-3">
+      <input
+        className="w-full rounded outline-none px-2"
+        type="text"
+        placeholder="Enter food item"
+        value={inputVal}
+        onChange={handleOnChange}
+      />
+      <button
+        className="py-2 px-4 rounded bg-green-500 text-white"
+        onClick={handleAddButton}
+      >
+        Add
+      </button>
+    </div>
+  );
+}
+
+export default DisplayInput;
