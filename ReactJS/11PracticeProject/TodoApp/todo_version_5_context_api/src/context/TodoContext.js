@@ -1,5 +1,11 @@
 import { createContext } from "react";
 
-const TodoContext = createContext([]);
+const TodoContext = createContext({
+  todos: [],
+  todoDateElement: "",
+  todoNameElement: "",
+  handleAddButton: () => {},
+  handleDeleteBtn: () => {},
+});
 
 export default TodoContext;

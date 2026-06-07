@@ -1,5 +1,10 @@
 import { createContext } from "react";
 
-const ItemContext = createContext([]);
+const ItemContext = createContext({
+  foodItems: [],
+  handleAddButton: () => {},
+  handleDeleteButton: () => {},
+  inputValueElement: "",
+});
 
 export default ItemContext;
