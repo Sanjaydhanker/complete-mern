@@ -1,6 +1,10 @@
 import React from "react";
+import { useContext } from "react";
+import CounterContext from "../store/CounterContext";
 
-function Buttons({ handleIncreamentBtn, handleDecreamentBtn }) {
+function Buttons() {
+  const { handleDecreamentBtn, handleIncreamentBtn } =
+    useContext(CounterContext);
   return (
     <div className="flex justify-evenly">
       <button
