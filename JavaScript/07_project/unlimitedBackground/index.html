@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlimited background</title>
+  </head>
+  <body style="background-color: #212121; color: white">
+    <h1>There are unlimited backgound color</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+    const body = document.querySelector("body");
+    const randomColor = function () {
+      const hex = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += hex[(randColor = Math.floor(Math.random() * 16))];
+      }
+      body.style.backgroundColor = color;
+    };
+    let handleColor;
+    document.querySelector("#start").addEventListener("click", () => {
+      if (!handleColor) {
+        handleColor = setInterval(randomColor, 1000);
+      }
+    });
+    document.querySelector("#stop").addEventListener("click", () => {
+      clearInterval(handleColor);
+      handleColor = null;
+    });
+  </script>
+</html>
